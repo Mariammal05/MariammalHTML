@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet"href="style.css">
+        <script src="script.js"></script>
+        <title>Edit menu Item</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="home">truYum</div>
+             <img src="C:\Users\833368\Documents\truyum\truYum-logo-light.png">
+             <a href="file:///C:/Users/833368/Documents/truyum/menu-item-list-admin.html">Menu</a>
+        </div>
+        <div class="cart">
+        <h>Edit Menu List</h>
+        </div>
+        <div class="body-content-colour">
+    <form action="edit-menu-item-status.html" onsubmit="return validateForm()"name="editMenuItem" method="post">
+    
+
+        <div class="form-field-spacing" >
+            <label for="name">Name</label>
+            <input type="text"Name="title"class="text-box">
+        </div>
+        <div class="form-field-spacing">
+            <label for="price">Price(Rs.)</label>
+            <input type="text"Name="price" class="text-boxl">
+        </div>
+        <div class="form-field-spacing">
+            <label for="active">Active</label>
+            <input type="radio"name="instock" class="radio" value="yes">yes
+           <input type="radio"name="instock" class="radio" value="no">no
+        </div>
+        <div class="form-field-spacing">
+            <label for="dateOfLaunch">Date of Launch</label>
+            <input type="text" Name="dateOfLaunch" class="text-boxl">
+        </div>
+        
+        <div class="form-field-spacing">
+            <label for="category">category</label>
+            <select name="category" class="dropdown">
+                    <option value="0">Main Course</option>
+                  <option value="Starters">Starters</option>
+                <option value="Main Course">Main Course</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Drink">Drink</option>
+            </select>
+        </div>
+        <div class="form-field-spacing">
+                <input type="checkbox" name="Free Delivery" class="checkbox">
+                <label for="Free Delivery">Free Delivery</label>
+                
+            </div>
+        <div class="form-field-spacing">
+            <input type="submit" class="button success-button" value="save">
+            
+        </div>
+    </form>
+ <div class="footer">
+     <h4>Copyright @ 2019</h4>
+ </div>
+
+
+    </body>
+</html>
