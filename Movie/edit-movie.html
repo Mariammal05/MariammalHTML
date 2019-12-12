@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+   <title>movie</title>
+</head>
+<body>
+   <div class="topnav">
+       <div class="home">Movie Cruiser</div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrorCdK6gftsE_bC7VRg4DvR6obHwLniP_7jG0Xl3IUSHaTy37A&s">
+       <a href="movie-list-admin.html">Movies</a>
+   </div>
+   <div class="fdfs">
+       <h>Edit Movie</h>
+   </div>
+   <div class="body-content-colour">
+<form action="edit-movie-status.html" onsubmit="return validateForm()"name="editMovie"method="post">
+  </div>
+  <div class="form-field-spacing">
+      <label for="Title">Title</label>
+      <input type="textBox" name="title" class="text-box" >
+  </div>
+  <div class="form-field-spacing">
+      <label for="gross">Gross ($)</label>
+      <input type="textBox" name="boxoffice" class="text-boxp">
+  </div>
+  <div class="form-field-spacing">
+        <label for="active">Active</label><br>
+        <input type="radio"name="active" class="radiobuttons" value="yes">yes
+       <input type="radio"name="active" class="radiobuttons" value="no">no
+    </div>
+    <div class="form-field-spacing">
+            <label for="dateOflaunch">Date of Launch</label>
+            <input type="textBox" Name="dateOflaunch" class="text-boxp">
+    </div>
+    <div class="form-field-spacing">
+            <label for="Genre">Genre</label>
+            <select name="Genre" class="drop-down-list">
+                <option value="0">Superhero</option>
+                 <option value="Science Fiction">Science Fiction</option>
+                <option value="Superhero">Superhero</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+    </div>
+        <div class="form-field-spacing">
+                <input type="checkbox" name="teaser" class="checkboxf">
+                <label for="Teaser">Has Teaser</label>
+                
+        </div>
+        <div class="form-field-spacing">
+            <input type="submit" class="button success-button" value="save">
+            <a href="edit-movie-status.html"></a>
+        </div>
+
+
+</form>
+ <div class="footer">
+     <h4>Copyright @ 2019</h4>
+ </div>
+
+
+    </body>
+</html>
